@@ -23,20 +23,10 @@ Concept
 
 Demo implementation
 -------------------
-- In this implementation of `scriptLauncher.py`, `params.json` is used to define `groups` of `runs`
-- A `run` is a script + its global params overridances
-- A `group` is a set of `runs`
-- Therefore the workflow is : 
-    - Work on your script and define some params : 
-        - `dictParams = {"param1": 8, "param4": "lucas"}`
-        - `valueParam = "white"`
-    - Allow PSL to hook in and override params if necessary : 
-        - `lib.updateGlobalsFromEncodedCallArgs()`
-        - Global params defined above can now be overriden
-    - Launch your script manually as usual : `python script.py`
-    - Or launch from PSL : 
-        - Run configuraiton for the script(s) are defined in the `params.json` file
-        - `python scriptLauncher.py all`
+- `scriptLauncher.py` is the launcher script
+- `scriptX.py` are test launched scripts
+- `params.json` is defining `groups` of `runs`
+- A `run` is a python script + its global params overridances
 - Tests: 
     - Manual / traditionnal launching : `python script1.py`
     - PSL lauching on all groups : `python scriptLauncher.py all`
