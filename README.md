@@ -19,7 +19,7 @@ Concept
         - If it is a dictionnary, the dics are merged
         - If not, the value is overriden
 - The `globalParams` are actually sent to the script as a base64 encoded string as the named arg `--updateGlobals`
-
+- In PSLed script, the global params are updated with `inspect.currentframe()`
 
 Demo implementation
 -------------------
