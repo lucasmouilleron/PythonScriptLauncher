@@ -1,0 +1,18 @@
+{
+  "smalls": {
+    "globalParams": {"dictParams": {"param1": 999}},
+    "runs": [
+      {"script": "script1.py", "args": "kate"},
+      {"script": "script1.py", "args": "kate", "params": {"dictParams": {"param1": 0, "param2": 0.02, "param3": 20}, "valueParam": "black"}},
+      {"script": "script2.py", "params": {"dictParams": {"param1": 0, "param2": 0.3}, "dictParam2": {"param1": 34}}}
+    ]
+  },
+  "bigs": {
+    "globalParams": {"dictParams": {"param1": 1999}},
+    "runs": [
+      {"script": "script1.py", "args": "kate"},
+      {"script": "script1.py", "args": "kate", "params": {"dictParams": {"param1": 0, "param2": 0.02, "param3": 20}, "valueParam": "black"}},
+      {"script": "script2.py", "params": {"dictParams": {"param1": 0, "param2": 0.3}, "dictParams2": {"param1": 34}}}
+    ]
+  }
+}
